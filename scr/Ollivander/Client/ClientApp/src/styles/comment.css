@@ -1,0 +1,46 @@
+.feedback-container {
+    padding: 5px 0px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--comment-backgroung);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.user {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.date {
+    color: var(--comment-date);
+}
+
+.feedback-point {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.point-header {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.point-description {
+    margin: 0;
+    font-size: 18px;
+}

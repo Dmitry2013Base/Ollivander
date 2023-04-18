@@ -1,0 +1,132 @@
+.list-1,
+.list-2 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--main-color);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.users,
+.roles {
+    margin: 0;
+    padding: 7px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.user-item,
+.role {
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-item:hover,
+.role:hover {
+    cursor: pointer;
+    background-color: var(--active-role);
+}
+
+.user-selected,
+.role-selected {
+    background-color: var(--active-user);
+}
+
+.users-header,
+.roles-header {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.roles-header {
+    text-align: right;
+}
+
+.create-role {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.create-role .input-item {
+    width: 100%;
+}
+
+.dev-icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dev-icon {
+    cursor: pointer;
+}
+
+.dev-icon-not-visible {
+    display: none;
+}
+
+.dev-icon:hover {
+    stroke: var(--main-color);
+}
+
+.list-item-remove:hover svg {
+    fill: var(--alert-bad);
+}
+
+.statistic-item {
+    width: 100%;
+    height: 100%;
+    background-color: var(--comment-chart);
+    border-radius: 10px;
+}
+
+.statistic-form {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--comment-chart);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chart-item {
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.chart-item:last-child {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+
+    .chart-item {
+        padding-right: 5px !important;
+    }
+
+    .statistic-form {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .users-header,
+    .roles-header {
+        text-align: center;
+    }
+}

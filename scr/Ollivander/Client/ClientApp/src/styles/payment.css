@@ -1,0 +1,246 @@
+::placeholder {
+    color: var(--payment-color);
+}
+
+.credit-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    position: relative;
+    width: 410px;
+    height: 250px;
+}
+
+.cr-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right bottom, #b3b3b3 60%, #6d6d6d);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-name {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-size: 23px;
+    color: var(--payment-color);
+    text-decoration: underline;
+}
+
+.card-name p {
+    margin: 0;
+}
+
+.card-back {
+    width: 280px;
+    height: 200px;
+    background-color: var(--payment-color);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right bottom, #b3b3b3 60%, #6d6d6d);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.credit-card-date {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    width: 85%;
+    margin-bottom: 35px;
+    margin-right: 7px;
+}
+
+.input {
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid var(--payment-color);
+    font-size: 20px;
+    text-align: center;
+    color: var(--payment-color);
+}
+
+.input:focus {
+    outline: 2px solid var(--payment-color);
+}
+
+.card-date {
+    font-size: 15px;
+    width: 25%;
+}
+
+.stripe {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--payment-stripe);
+}
+
+.code {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 80px;
+    font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.payment-buttons button {
+    width: max-content;
+    font-size: 20px;
+}
+
+.payment-header {
+    text-align: center;
+    font-size: 35px;
+}
+
+.payment-price {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.buy-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+}
+
+.buy-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 0;
+    border: 1px solid var(--main-color);
+    border-left: none;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.buy-product-image {
+    min-width: 100px;
+    height: 100px;
+    background-color: var(--image-backgroung);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.buy-product-name {
+    text-align: center;
+    width: 48%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.buy-product-price {
+    margin-right: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.payment-error {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width: 992px) {
+    .buy-product {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        border: 1px solid var(--main-color);
+        border-radius: 0;
+        padding: 10px 0px;
+    }
+
+    .buy-product-name {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .card-container {
+        height: 270px;
+    }
+
+    .buy-product {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .card-name {
+        font-size: 35px;
+    }
+
+    .input {
+        font-size: 30px;
+    }
+
+    .date {
+        width: 110px;
+    }
+
+    .code {
+        width: 170px;
+    }
+
+    .stripe {
+        margin-top: 50px;
+        height: 60px;
+    }
+
+    .card-container {
+        width: 610px;
+        height: 400px;
+    }
+
+    .cr-card,
+    .card-back {
+        width: 480px;
+        height: 300px;
+    }
+}

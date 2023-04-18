@@ -1,0 +1,37 @@
+.pages {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--pagination-border);
+    border-top: 1px solid var(--pagination-border);
+}
+
+.page-number {
+    font-size: 25px;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.page-number:hover {
+    cursor: pointer;
+    color: var(--pagination-pages-color);
+    background-color: var(--pagination-pages-color-hover);
+}
+
+.page-active {
+    border-bottom: 3px solid var(--pagination-pages-color);
+}
+
+.page-not-active {
+    display: none;
+}
+
+.page-not-active:hover {
+    cursor: default;
+    color: var(--pagination-border);
+}

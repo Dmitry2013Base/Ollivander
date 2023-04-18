@@ -1,0 +1,95 @@
+﻿// product
+
+export const GET_PRODUCT = 'GET_PRODUCT';
+export const CREATE_PRODUCT = 'CREATE_PRODUCT';
+export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
+export const PRODUCT_IS_UPDATE = 'PRODUCT_IS_UPDATE';
+export const PRODUCT_UPDATE_NAME = 'PRODUCT_UPDATE_NAME';
+export const PRODUCT_UPDATE_DESCRIPTION = 'PRODUCT_UPDATE_DESCRIPTION';
+export const PRODUCT_UPDATE_IMAGE = 'PRODUCT_UPDATE_IMAGE';
+export const PRODUCT_UPDATE_CATEGORY = 'PRODUCT_UPDATE_CATEGORY';
+export const PRODUCT_UPDATE_PRICE = 'PRODUCT_UPDATE_PRICE';
+export const PRODUCT_UPDATE_SALE = 'PRODUCT_UPDATE_SALE';
+export const PRODUCT_UPDATE_COUNT = 'PRODUCT_UPDATE_COUNT';
+export const PARAM_TITLE_UPDATE = 'PARAM_TITLE_UPDATE';
+export const PARAM_VALUE_UPDATE = 'PARAM_VALUE_UPDATE';
+export const ADD_PARAM_FOR_PRODUCT = 'ADD_PARAM_FOR_PRODUCT';
+export const PARAM_REMOVE = 'PARAM_REMOVE';
+export const SET_IS_PRODUCT_UPDATE = 'SET_IS_PRODUCT_UPDATE';
+
+//comments
+
+export const GET_COMMENTS = 'GET_COMMENTS';
+export const CREATE_COMMENT = 'CREATE_COMMENT';
+export const COMMENT_ERROR = 'COMMENT_ERROR';
+
+// catalog
+
+export const GET_PRODUCTS_CATEGORIES = 'GET_PRODUCTS_CATEGORIES';
+export const GET_CATALOG_ITEMS = 'GET_CATALOG_ITEMS';
+export const GET_COUNT_CATALOG_ITEMS = 'GET_COUNT_CATALOG_ITEMS';
+export const HEADER_UPDATE = 'HEADER_UPDATE';//?
+export const DELETE_CATALOG_ITEM = 'DELETE_CATALOG_ITEM';
+
+//collection
+export const GET_COUNT_BASKET_ITEMS = 'GET_COUNT_BASKET_ITEMS';//?
+export const GET_COUNT_COLLECTION_ITEMS = 'GET_COUNT_COLLECTION_ITEMS';
+export const GET_COLLECTION_ITEMS = 'GET_COLLECTION_ITEMS';
+export const ADD_ITEM_IN_COLLECTION = 'ADD_ITEM_IN_COLLECTION';
+export const REMOVE_ITEM_FROM_COLLECTION = 'REMOVE_ITEM_FROM_COLLECTION';
+
+//user
+export const LOGIN = 'LOGIN';
+export const REGISTRATION = 'REGISTRATION';
+export const LOGOUT = 'LOGOUT';
+export const LOGIN_ERROR = 'LOGIN_ERROR';
+export const GET_NEXT_ROUTES = 'GET_NEXT_ROUTES';
+//export const GET_USER_ROLES = 'GET_USER_ROLES';
+//export const GET_USER_REFRECH_TOKEN = 'GET_USER_REFRECH_TOKEN';//?
+//export const PASSWORD_CHANGE = 'PASSWORD_CHANGE';
+
+//loader
+
+export const LOADER_ON = 'LOADER_ON';
+export const LOADER_OFF = 'LOADER_OFF';
+export const VISIBLE_ON = 'VISIBLE_ON';
+export const VISIBLE_OFF = 'VISIBLE_OFF';
+
+//alert
+
+export const ALERT_OK_ON = 'ALERT_OK_ON';
+export const ALERT_OK_OFF = 'ALERT_OK_OFF';
+export const ALERT_BAD_ON = 'ALERT_BAD_ON';
+export const ALERT_BAD_OFF = 'ALERT_BAD_OFF';
+
+//payment
+
+export const GET_ORDER = 'GET_ORDER';
+export const GET_ORDERS = 'GET_ORDERS';
+export const GET_PAYMENT = 'GET_PAYMENT';
+export const SET_STATUS_IN_ORDER = 'SET_STATUS_IN_ORDER';
+export const SET_COMMENT_IN_ORDER = 'SET_COMMENT_IN_ORDER';
+export const SET_ORDER = 'SET_ORDER';
+export const ORDER_ERROR = 'ORDER_ERROR';
+
+//development
+
+export const GET_USERS = 'GET_USERS';
+export const GET_ALL_ROLES = 'GET_ALL_ROLES';
+export const GET_ROLES = 'GET_ROLES';
+export const CREATE_ROLE = 'CREATE_ROLE';
+export const ADD_USER_ROLE = 'ADD_USER_ROLE';
+export const REMOVE_USER_ROLE = 'REMOVE_USER_ROLE';
+export const REMOVE_ROLE = 'REMOVE_ROLE';
+
+//statistic
+
+export const GET_STATUSES = 'GET_STATUSES';
+export const GET_STATISTIC_PAYMENT = 'GET_STATISTIC_1';
+export const GET_STATISTIC_USER = 'GET_STATISTIC_2';
+export const GET_STATISTIC_PRODUCT = 'GET_STATISTIC_3';
+
+//search
+
+export const SET_ARRAY = 'SET_ARRAY';
+export const SEARCH_IN_ARRAY = 'SEARCH_IN_ARRAY';

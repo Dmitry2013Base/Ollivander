@@ -1,0 +1,74 @@
+:root {
+    --pagination-pages-color: orange;
+    --pagination-pages-color-hover: antiquewhite;
+    --pagination-border: black;
+    --main-color: teal;
+    --button-color: teal;
+    --button-color-black: black;
+    --button-color-hover: antiquewhite;
+    --button-color-disabled: lightgray;
+    --list-item-color: black;
+    --star-color: gold;
+    --sale-color: lightcoral;
+    --button-link-color-hover: white;
+    --button-link-color: black;
+    --active-category: gray;
+    --image-backgroung: lightgray;
+    --alert-backgroung: lightgray;
+    --alert-ok: green;
+    --alert-bad: red;
+    --comment-backgroung: rgb(241, 241, 241);
+    --product-name-color: teal;
+    --comment-date: gray;
+    --active-role: lightsalmon;
+    --active-user: lightgray;
+    --comment-chart: lightgray;
+    --modal-background: white;
+    --error-color: red;
+    --application-color: lightseagreen;
+    --payment-color: white;
+    --payment-stripe: black;
+    --product-param: lightgray;
+    --rating-color: rgb(87, 177, 255);
+    --rating-color-active: #ffd300;
+    --scrollbar-track: #f1f1f1;
+    --scrollbar-thumb: #c1c1c1;
+    --body-background: #f6f5f3;
+    --body-color: black;
+    --input-color: #fff;
+    --option-color: teal;
+    --option-background: rgba(0, 0, 0, 0);
+    --category-item-hover: 8px 8px 4px 0px rgba(0, 0, 0, 15%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #c5c5c5;
+        --button-color: #c5c5c5;
+        --button-color-hover: #636464;
+        --button-color-disabled: #626262;
+        --sale-color: #e73949;
+        --rating-color: #225887;
+        --pagination-pages-color-hover: #636464;
+        --pagination-border: #c5c5c5;
+        --modal-background: #363636;
+        --comment-chart: #4c4c4c;
+        --product-name-color: white;
+        --active-role: #895d4c;
+        --active-user: #626262;
+        --comment-backgroung: #444444;
+        --active-category: white;
+        --button-color-black: white;
+        --button-link-color-hover: #363636;
+        --button-link-color: black;
+        --list-item-color: #c5c5c5;
+        --scrollbar-track: #424242;
+        --scrollbar-thumb: #686868;
+        --body-background: #363636;
+        --body-color: #c5c5c5;
+        --input-color: #c5c5c5;
+        --option-color: black;
+        --option-background: rgba(0, 0, 0, 0.5);
+        --category-item-hover: 8px 8px 4px 0px rgba(255, 255, 255, 15%);
+    }
+}

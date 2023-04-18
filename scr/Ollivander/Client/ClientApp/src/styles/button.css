@@ -1,0 +1,27 @@
+.item-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.button-base {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 3px 7px;
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
+    font-size: 18px;
+}
+
+.button-base:hover {
+    cursor: pointer;
+    background-color: var(--button-color-hover);
+}
+
+.button-base:disabled {
+    pointer-events: none;
+    border: 1px solid var(--button-color-disabled);
+    color: var(--button-color-disabled);
+}

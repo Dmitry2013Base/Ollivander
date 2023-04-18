@@ -1,0 +1,21 @@
+select {
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    appearance: none;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--main-color);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+select option {
+    margin: 40px;
+    background: var(--option-background);
+    color: var(--option-color);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--main-color);
+}

@@ -1,0 +1,83 @@
+version: '3.4'
+
+services:
+
+  postgres:
+    container_name: 'postgres'
+    image: postgres
+    ports:
+      - "5010:5432"
+    environment:
+      POSTGRES_USER: testadmin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydbname
+
+  apigateway:
+    container_name: 'apigateway'
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /ApiGateway/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5001:80
+
+  identity:
+    container_name: 'identity'
+    image: ${DOCKER_REGISTRY-}identity
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Identity/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5002:80
+
+  catalog:
+    container_name: catalog
+    image: ${DOCKER_REGISTRY-}catalog
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Catalog/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5003:80
+
+  development:
+    container_name: 'development'
+    image: ${DOCKER_REGISTRY-}development
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Development/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5004:80
+
+  collection:
+    container_name: 'collection'
+    image: ${DOCKER_REGISTRY-}collection
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Collection/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5005:80
+
+  payment:
+    container_name: 'payment'
+    image: ${DOCKER_REGISTRY-}payment
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Payment/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5006:80
+
+  client:
+    container_name: 'client'
+    image: ${DOCKER_REGISTRY-}client
+    build:
+      context: ../scr/Ollivander
+      dockerfile: /Client/Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5000:80

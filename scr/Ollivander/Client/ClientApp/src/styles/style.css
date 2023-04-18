@@ -1,0 +1,28 @@
+body {
+    background-color: var(--body-background) !important;
+    color: var(--body-color) !important;
+}
+
+.container-not-visible {
+    display: none;
+}
+
+body::-webkit-scrollbar,
+.list-1::-webkit-scrollbar,
+.list-2::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track,
+.list-1::-webkit-scrollbar-track,
+.list-2::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb,
+.list-1::-webkit-scrollbar-thumb,
+.list-2::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 20px;
+    border: 3px solid var(--scrollbar-track);
+}
